@@ -2,8 +2,10 @@ import { Animal } from "../Animal";
 import { SecondGroup } from "../AnimalGroups/SecondGroup";
 export class Tiger extends Animal implements SecondGroup {
       outsideFromCage: boolean;
-      constructor(name: string, age: number) {
+
+      constructor(name: string, age: number, outsideFromCage: boolean) {
             super(name, age);
+            this.outsideFromCage = outsideFromCage;
       }
 
       run(): void {

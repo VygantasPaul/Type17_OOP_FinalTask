@@ -1,5 +1,6 @@
 import { Animal } from "../Animal";
 import { OneGroup } from "../AnimalGroups/OneGroup";
+
 export class Zebra extends Animal implements OneGroup {
       private max_speed: number;
       origin: string;
@@ -29,8 +30,8 @@ export class Zebra extends Animal implements OneGroup {
             console.log(`Zebra changed speed to ${newSpeedForZebra} km/h`);
       }
       setOrigin(neworigin: string): void {
-            const neworiginForZebra = (this.origin = neworigin);
-            console.log(`Zebra origin ${neworiginForZebra} `);
+            this.origin = neworigin;
+            console.log(`Zebra origin ${neworigin}`);
       }
       sleep(): void {
             console.log(`Zebra which name is ${this.name} is sleep`);

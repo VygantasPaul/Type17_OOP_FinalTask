@@ -5,7 +5,7 @@ import { ZooKeeper } from "./ZooKeeper";
 import { Logger } from "./Logger";
 const zebra = new Zebra("Zebriukas dryzius", 5, 60, "Africa");
 const elephant = new Elephant("Dumbo", 10, 5000);
-const tiger = new Tiger("Symba", 7);
+const tiger = new Tiger("Symba", 7, true);
 
 const zooKeper = new ZooKeeper("Johm", "Black");
 
