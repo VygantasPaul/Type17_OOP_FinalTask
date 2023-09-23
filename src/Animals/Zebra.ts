@@ -26,8 +26,8 @@ export class Zebra extends Animal implements OneGroup {
             );
       }
       setMaxSpeed(newSpeed: number): void {
-            const newSpeedForZebra = (this.max_speed = newSpeed);
-            console.log(`Zebra changed speed to ${newSpeedForZebra} km/h`);
+            this.max_speed = newSpeed;
+            console.log(`Zebra changed speed to ${newSpeed} km/h`);
       }
       setOrigin(neworigin: string): void {
             this.origin = neworigin;

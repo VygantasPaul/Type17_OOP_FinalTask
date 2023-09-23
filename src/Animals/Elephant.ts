@@ -17,7 +17,7 @@ export class Elephant extends Animal implements ThirdGroup {
             console.log(`Elephant called ${this.name} can make sound.`);
       }
       setWeight(newWeight: number): void {
-            const newWieght = (this.weight = newWeight);
-            console.log(`Elephant called ${this.name} weight ${newWieght}.`);
+            this.weight = newWeight;
+            console.log(`Elephant called ${this.name} weight ${newWeight}.`);
       }
 }
