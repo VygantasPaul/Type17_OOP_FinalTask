@@ -1,6 +1,6 @@
 import { Animal } from "../Animal";
-import { SecondGroup } from "../AnimalGroups/SecondGroup";
-export class Tiger extends Animal implements SecondGroup {
+import { JumpAndRun } from "../AnimalGroups/SecondGroup";
+export class Tiger extends Animal implements JumpAndRun {
       outsideFromCage: boolean;
 
       constructor(name: string, age: number, outsideFromCage: boolean) {

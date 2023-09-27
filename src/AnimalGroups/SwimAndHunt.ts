@@ -1,4 +1,4 @@
-export interface ThirdGroup {
+export interface SwimAndHunt {
       swim(): void;
       hunt(): void;
 }

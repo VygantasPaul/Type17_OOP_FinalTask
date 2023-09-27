@@ -1,7 +1,7 @@
 import { Animal } from "../Animal";
-import { ThirdGroup } from "../AnimalGroups/ThirdGroup";
+import { SwimAndHunt } from "../AnimalGroups/SwimAndHunt";
 
-export class Elephant extends Animal implements ThirdGroup {
+export class Elephant extends Animal implements SwimAndHunt {
       weight: number;
       constructor(name: string, age: number, weight: number) {
             super(name, age);

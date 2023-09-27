@@ -1,7 +1,7 @@
 import { Animal } from "../Animal";
-import { OneGroup } from "../AnimalGroups/OneGroup";
+import { SleepAndWalk } from "../AnimalGroups/SleepAndWalk";
 
-export class Zebra extends Animal implements OneGroup {
+export class Zebra extends Animal implements SleepAndWalk {
       private max_speed: number;
       origin: string;
 

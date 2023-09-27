@@ -1,4 +1,4 @@
-export interface SecondGroup {
+export interface JumpAndRun {
       run(): void;
       jump(): void;
 }
