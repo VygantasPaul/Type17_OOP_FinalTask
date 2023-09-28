@@ -2,9 +2,23 @@ import { Zebra } from "./Animals/Zebra";
 import { Elephant } from "./Animals/Elephant";
 import { Tiger } from "./Animals/Tiger";
 import { ZooKeeper } from "./ZooKeeper";
-const zebra = new Zebra("Zebriukas dryzius", 5, 60, "Africa");
-const elephant = new Elephant("Dumbo", 10, 5000);
-const tiger = new Tiger("Symba", 7, true);
+const zebraData = {
+      name: "Zebriukas dryzius",
+      age: 5,
+};
+const tigerData = {
+      name: "Symba",
+      age: 7,
+};
+const elephantData = {
+      name: "Dumbo",
+      age: 10,
+};
+const zebra = new Zebra(zebraData, 60, "Africa");
+
+const elephant = new Elephant(elephantData, 5000);
+
+const tiger = new Tiger(tigerData, false);
 
 const zooKeper = new ZooKeeper("Johm", "Black");
 

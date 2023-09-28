@@ -1,12 +1,12 @@
-import { Animal } from "../Animal";
+import { Animal, TypeAnimal } from "../Animal";
 import { JumpAndRun } from "../AnimalGroups/JumpAndRun";
 import { Logger } from "../Logger";
 const logger = Logger.getObject();
 export class Tiger extends Animal implements JumpAndRun {
       outsideFromCage: boolean;
 
-      constructor(name: string, age: number, outsideFromCage: boolean) {
-            super(name, age);
+      constructor(animalData: TypeAnimal, outsideFromCage: boolean) {
+            super(animalData);
             this.outsideFromCage = outsideFromCage;
       }
 
