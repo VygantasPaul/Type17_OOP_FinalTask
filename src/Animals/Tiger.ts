@@ -1,5 +1,7 @@
 import { Animal } from "../Animal";
-import { JumpAndRun } from "../AnimalGroups/SecondGroup";
+import { JumpAndRun } from "../AnimalGroups/JumpAndRun";
+import { Logger } from "../Logger";
+const logger = Logger.getObject();
 export class Tiger extends Animal implements JumpAndRun {
       outsideFromCage: boolean;
 
@@ -9,24 +11,24 @@ export class Tiger extends Animal implements JumpAndRun {
       }
 
       run(): void {
-            console.log(`Tiger which name is ${this.name} can run `);
+            logger.log(`Tiger which name is ${this.name} can run `);
       }
 
       jump(): void {
-            console.log(`Tiger which name is ${this.name} can jump.`);
+            logger.log(`Tiger which name is ${this.name} can jump.`);
       }
 
       makeSound(): void {
-            console.log(`Tiger which name is ${this.name} can makes sound.`);
+            logger.log(`Tiger which name is ${this.name} can makes sound.`);
       }
       setGoGoutsideCage(goOutsideFromCage: boolean): void {
             this.outsideFromCage = goOutsideFromCage;
             if (goOutsideFromCage) {
-                  console.log(
+                  logger.log(
                         `Tiger which name is ${this.name} is going outside the cage.`,
                   );
             } else {
-                  console.log(
+                  logger.log(
                         `Tiger which name is ${this.name} is staying inside the cage.`,
                   );
             }
